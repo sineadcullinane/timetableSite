@@ -1,3 +1,3 @@
 # timetableSite
 
-Very simple site built as a refresher for image mapping.
+Very simple site built using Bootstrap as a refresher for image mapping.
