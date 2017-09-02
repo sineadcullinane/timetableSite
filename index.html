@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title> College Timetable </title>
+
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+        <script>/*! Image Map Resizer (imageMapResizer.min.js ) - v1.0.3 - 2016-06-16
+                *  Desc: Resize HTML imageMap to scaled image.
+                *  Copyright: (c) 2016 David J. Bradshaw - dave@bradshaw.net
+                *  License: MIT
+                */
+               
+               !function(){"use strict";function a(){function a(){function a(a,c){function d(a){var c=1===(e=1-e)?"width":"height";return Math.floor(Number(a)*b[c])}var e=0;i[c].coords=a.split(",").map(d).join(",")}var b={width:k.width/k.naturalWidth,height:k.height/k.naturalHeight};j.forEach(a)}function b(a){return a.coords.replace(/ *, */g,",").replace(/ +/g,",")}function c(){clearTimeout(l),l=setTimeout(a,250)}function d(){(k.width!==k.naturalWidth||k.height!==k.naturalHeight)&&a()}function e(){k.addEventListener("load",a,!1),window.addEventListener("focus",a,!1),window.addEventListener("resize",c,!1),window.addEventListener("readystatechange",a,!1),document.addEventListener("fullscreenchange",a,!1)}function f(){return"function"==typeof h._resize}function g(){i=h.getElementsByTagName("area"),j=Array.prototype.map.call(i,b),k=document.querySelector('img[usemap="#'+h.name+'"]'),h._resize=a}var h=this,i=null,j=null,k=null,l=null;f()?h._resize():(g(),e(),d())}function b(){function b(a){if(!a.tagName)throw new TypeError("Object is not a valid DOM element");if("MAP"!==a.tagName.toUpperCase())throw new TypeError("Expected <MAP> tag, found <"+a.tagName+">.")}function c(c){c&&(b(c),a.call(c),d.push(c))}var d;return function(a){switch(d=[],typeof a){case"undefined":case"string":Array.prototype.forEach.call(document.querySelectorAll(a||"map"),c);break;case"object":c(a);break;default:throw new TypeError("Unexpected data type ("+typeof a+").")}return d}}"function"==typeof define&&define.amd?define([],b):"object"==typeof module&&"object"==typeof module.exports?module.exports=b():window.imageMapResize=b(),"jQuery"in window&&(jQuery.fn.imageMapResize=function(){return this.filter("map").each(a).end()})}();
+               //# sourceMappingURL=imageMapResizer.map</script>
+        <script type="text/javascript">
+    
+            $('map').imageMapResize();
+    
+        </script>
+
+    </head>
+
+    <body>
+
+        <img src="./images/timetable.jpg" alt="Timetable" usemap="#timetable"/>
+        <map name="timetable" id="timetable">
+            <area alt="CS3513" title="CS3513" href="#cs3513" shape="rect" coords="451,90,628,186" />
+            <area alt="CS3511" title="CS3511" href="#cs3511" shape="rect" coords="631,91,809,185" />
+            <area alt="CS3510" title="CS3510" href="#cs3510" shape="rect" coords="811,90,990,186" />
+            <area alt="CS3500" title="CS3500" href="#cs3500" shape="rect" coords="1172,89,1351,186" />
+            <area alt="CS3311" title="CS3311" href="#cs3311" shape="rect" coords="1536,91,1720,187" />
+            <area alt="CS3506" title="CS3506" href="#cs3506" shape="rect" coords="631,188,811,284" />
+            <area alt="CS3511" title="CS3511" href="#cs3511" shape="rect" coords="449,285,628,381" />
+            <area alt="CS3300" title="CS3300" href="#cs3300" shape="rect" coords="631,286,809,382" />
+            <area alt="CS3510" title="CS3510" href="#cs3510" shape="rect" coords="811,287,990,382" />
+            <area alt="CS3500" title="CS3500" href="#cs3500" shape="rect" coords="991,285,1171,383" />
+            <area alt="CS3311" title="CS3311" href="#cs3311" shape="rect" coords="1351,285,1536,384" />
+            <area alt="CS3506" title="CS3506" href="#cs3506" shape="rect" coords="631,384,810,480" />
+            <area alt="CS3513" title="CS3513" href="#cs3513" shape="rect" coords="811,482,992,579" />
+        </map>
+
+        <div class="container">
+                <h2>Module Descriptions</h2>          
+                <table class="table table-bordered">
+                    <colgroup>
+                        <col class="col-md-3">
+                        <col class="col-md-9">
+                    </colgroup>
+                  <thead>
+                    <tr>
+                        <th>Module</th>
+                        <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="cs3513">
+                        <td><h4>CS3513</h4>
+                            <p>Client-Side Programming</p>
+                        </td>
+                        <td><p>Students will learn how to develop dynamic web pages using client-side programming.</p>
+                            <p> Programming in JavaScript. Style control. Form processing. Dynamic form generation. Reacting to browser-triggered and user-triggered events. Stand-alone client-side application development. Java applets. AJAX-style interaction with server-side utilities.</p>
+                        </td>
+                    </tr>
+                    <tr id="cs3511">
+                        <td><h4>CS3511</h4>
+                            <p>Web Security</p>
+                        </td>
+                        <td><p>Students will learn about the threats that malicious users pose to web systems and how to forestall these dangers.</p>
+                            <p>Password attacks, injection attacks, denial of service, stack-
+                                smashing, scripting attacks, malicious code. One-way Hash functions
+                                and introduction to cryptography. Basics of Secure coding, password/
+                                authentication mechanisms, secure connection management. Securing the
+                                database backend/web-server, browser security. Web vulnerability
+                                audit tools, firewalls.</p>
+                        </td>
+                    </tr>
+                    <tr id="cs3510">
+                        <td><h4>CS3510</h4>
+                            <p>Advanced Server-Side Programming</p>
+                        </td>
+                        <td><p>Students will learn advanced object-oriented programming techniques for server-side programming.</p>
+                            <p>Server-side programming using Java Servlets and Java Server Pages</p>
+                        </td>
+                    </tr>
+                    <tr id="cs3500">
+                        <td><h4>CS3500</h4>
+                            <p>Software Engineering</p>
+                        </td>
+                        <td><p>Students will learn the elements of software project planning; Students will learn the characteristics of high quality object-orientated designs.</p>
+                            <p>Project management planning; configuration management; testing techniques. Object-orientated design: cohesion and coupling; programming to an interface; defensive programming; design patterns.</p>
+                        </td>
+                    </tr>
+                    <tr id="cs3311">
+                        <td><h4>CS3311</h4>
+                            <p>Middleware</p>
+                        </td>
+                        <td><p>Students will learn the role of middleware and different models of middleware; They will learn how to program systems that use the different models of middleware.</p>
+                            <p>Middleware architecture. Network services and protocols. Distributed message passing. Client-server communication: RPC. Interfaces. Interface Definition Languages. Document-based middleware: the World Wide Web. File system based middleware: transfer model, directory hierarchy, naming transparency, file-sharing semantics. Shared Object-based Middleware: Communication between distributed objects, RMI. Coordination-based Middleware: Events and notifications, Publish/subscribe.</p>
+                        </td>
+                    </tr>
+                    <tr id="cs3506">
+                        <td><h4>CS3506</h4>
+                            <p>Networks and Data Communications</p>
+                        </td>
+                        <td><p>Students will learn advanced aspects of network computing.</p>
+                            <p>Network layer, including router design, Internet addressing and Internet Protocol (IPv4 and IPv6).
+                                Intra- and Inter-domain routing. Multicast routing. Link layer, including error detection, medium access control, Ethernet case study with VLANs and switching. Network Security.</p>
+                        </td>
+                    </tr>
+                    <tr id="cs3300">
+                        <td><h4>CS3300</h4>
+                            <p>Work Placement</p>
+                        </td>
+                        <td><p>Students should gain experience of the workplace.</p>
+                            <p>At the end of the second term, each student will take up a placement outside the Department of Computer Science on an agreed work programme. The placement period will normally be 22 weeks. The work programme will be jointly monitored by a UCC Computer Science staff member and an employee of the placement organisation. Each student will be required to submit a report.</p>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+        <div class="spacing">&nbsp;</div>
+    </body>
+</html>
